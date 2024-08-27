@@ -2,14 +2,16 @@
 .bg-container {
   background-color: #ffc2a0;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .card-container {
   background-color: #ffffff;
-  width: 85vw;
+  width: 90%;
   border-radius: 12px;
+  padding: 0;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -23,6 +25,50 @@
 }
 .flex-container {
   display: flex;
+  width: 100%;
+  padding: 4px;
   flex-direction: column;
   list-style-type: none;
+}
+.new-todo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.input-text {
+  outline: none;
+  border: 1px solid #bfbfbf;
+  background-color: transparent;
+  height: 30px;
+  width: 180px;
+  font-size: 14px;
+  font-family: 'roboto';
+  font-weight: 500;
+}
+.add-btn {
+  border: 1px solid #bfbfbf;
+  border-left: none;
+  background-color: #1247ed;
+  height: 30px;
+  width: 60px;
+  font-family: 'roboto';
+  font-weight: bold;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .new-todo-container {
+    margin-left: 30px;
+  }
+  .input-text {
+    height: 30px;
+    width: 380px;
+  }
+  .add-btn {
+    height: 31px;
+    width: 100px;
+  }
 }
